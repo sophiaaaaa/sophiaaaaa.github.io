@@ -3,6 +3,25 @@
 
 @import "variables";
 
+* {
+    font-family: $main;
+}
+.centertext {
+    text-align: center;
+}
+.flexcontain {
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 0;
+}
+
+.flexitem {
+    display: block;
+}
+
+h1 {
+    font-size: 3em;
+}
 .content {
     margin: 25px;
 }
@@ -12,12 +31,12 @@ nav {
     padding: 0;
     text-align: center;
     height: 50px;
-    margin: -10px -20px;
+    margin: -8px;
 }
 .navlink {
     color: $light;
     text-decoration: none;
-    font-family: $heading;
+    font-family: $main;
     margin: 10px;
     position: relative;
     top: 15px;
@@ -37,4 +56,13 @@ nav {
 .navlink:hover:before {
     visibility: visible;
     width: 100%;
+}
+
+footer {
+    background: $slate;
+    color: $light;
+    height: 100px;
+    margin: 10px -8px -50px -8px;
+    padding: 0.5vh 2vw;
+
 }

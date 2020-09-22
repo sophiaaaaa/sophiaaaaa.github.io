@@ -1,0 +1,32 @@
+---
+---
+@import "variables";
+
+#home {
+    position: absolute;
+    left: 0;
+    height: 90vh;
+    z-index: -2;
+    margin: -25px -80px 0 0;
+    width: 100%;
+    object-fit: cover;
+    background-image: url(https://onlyvectorbackgrounds.com/wp-content/uploads/2018/09/Abstract-Ambient-Light-Background-Day-Blue.jpg);
+}
+
+.services{
+    background: $light;
+    box-shadow:5px 5px 10px grey;
+    padding: 10px 40px 30px;
+    color: $dark;
+    margin: 40px;
+    font-family: $main;
+}
+
+.awards {
+    background: $dark;
+    box-shadow:5px 5px 10px grey;
+    padding: 10px 40px 30px;
+    color: $light;
+    margin: 40px;
+    font-family: $main;
+}
