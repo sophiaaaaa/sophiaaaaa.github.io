@@ -1,8 +1,40 @@
 ---
 ---
 
-@import "main";
+@import "variables";
 
-a {
-    color: $dark;
+.content {
+    margin: 25px;
+}
+//navbar
+nav {
+    background: $dark;
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    margin: -10px -20px;
+}
+.navlink {
+    color: $light;
+    text-decoration: none;
+    font-family: $heading;
+    margin: 10px;
+    position: relative;
+    top: 15px;
+}
+
+.navlink:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $light;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.navlink:hover:before {
+    visibility: visible;
+    width: 100%;
 }
